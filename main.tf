@@ -5,6 +5,13 @@ terraform {
         version = "~> 4.49.0"
     }
   }
+  
+  cloud {
+    organization = "hashicorp-jennawong"
+    workspaces {
+      name = "random-pet-private-module"
+    }
+  }
 }
 
 provider "aws" {
